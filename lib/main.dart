@@ -7,33 +7,44 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.indigo,
         body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          CircleAvatar(
-            radius: 55.0,
-            backgroundColor: Colors.white24,
-            backgroundImage: AssetImage("assets/images/persona1.jpeg"),
+          Container(
+            margin: EdgeInsets.all(10.0),
+            child: CircleAvatar(
+              radius: 55.0,
+              backgroundColor: Colors.white24,
+              backgroundImage: AssetImage("assets/images/persona1.jpeg"),
+            ),
           ),
-          Text(
-            "Fiorella Tapia Gonzales",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 22.00,
-              fontWeight: FontWeight.w700,
-              fontFamily: "Lobster",
+          Container(
+            margin: EdgeInsets.all(5.0),
+            child: Text(
+              "Fiorella de fátima Guadalupe",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 25.00,
+                fontWeight: FontWeight.w700,
+                fontFamily: "Lobster",
+              ),
             ),
           ),
           Text(
             "FLUTTER DEVELOPER",
             style: TextStyle(
-              color: Colors.white,
+              color: Colors.white60,
               fontSize: 18.00,
-              fontWeight: FontWeight.w200,
+              letterSpacing: 3.0,
+              fontWeight: FontWeight.w400,
+              fontFamily: "Roboto",
             ),
           ),
-          Divider(
-            thickness: 0.7,
-            color: Colors.white38,
-            indent: 40.0,
-            endIndent: 40.0,
+          SizedBox(
+            width: 170.0,
+            child: Divider(
+              thickness: 0.7,
+              color: Colors.white38,
+              //    indent: 150.0,
+              //   endIndent: 150.0,
+            ),
           ),
           Card(
             margin: EdgeInsets.symmetric(horizontal: 14.0, vertical: 8.0),
