@@ -80,6 +80,32 @@ void main() {
               ), // part right
             ),
           ),
+          SizedBox(
+            height: 20.0,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                "assets/images/facebook.png",
+                height: 60.0,
+              ),
+              SizedBox(
+                width: 28.0,
+              ),
+              Image.asset(
+                "assets/images/instagram.png",
+                height: 60.0,
+              ),
+              SizedBox(
+                width: 28.0,
+              ),
+              Image.asset(
+                "assets/images/twitter.png",
+                height: 60.0,
+              ),
+            ],
+          ),
         ]),
       ),
     ),
